@@ -1,0 +1,13 @@
+drop database car;
+create database car;
+
+use car;
+ 
+create table if not exists carDetail(
+  carId INT not null auto_increment,
+  title varchar(100),
+  price varchar(100),
+  location varchar(100),
+  category varchar(100),
+constraint primary key(carId)
+);
